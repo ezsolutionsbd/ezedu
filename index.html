@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EzEdu – School management app for Bangladesh</title>
-  <meta name="description" content="EzEdu runs attendance, homework, notices, exams, results, and fees for schools, colleges, coaching centers, and madrasas, in Bangla and English.">
+  <meta name="description" content="EzEdu runs attendance, homework, notices, exams, results, and fees for schools, colleges, coaching centers, and madrasas, on phone and web at the same time, in Bangla and English.">
   <meta name="theme-color" content="#0e7c86">
   <meta property="og:title" content="EzEdu – School management app">
-  <meta property="og:description" content="Run your whole school from one phone app. Bangla and English.">
+  <meta property="og:description" content="Run your whole school on phone and computer, at the same time. Bangla and English.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,19 +54,41 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow" data-i18n="hero.eyebrow">School management app for Bangladesh</p>
-          <h1 data-i18n="hero.title">Run your whole school from one phone app</h1>
-          <p class="lead" data-i18n="hero.lead">Attendance, homework, notices, exams, results, and fees in one place. Teachers, guardians, and students each get their own simple screens, in Bangla and English.</p>
+          <h1 data-i18n="hero.title">Run your whole school on phone and computer</h1>
+          <p class="lead" data-i18n="hero.lead">Attendance, homework, notices, exams, results, and fees in one place. Use EzEdu on a phone and on the web at the same time, with the same data on both. Teachers, guardians, and students each get their own simple screens, in Bangla and English.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#contact" data-i18n="cta.demo">Book a demo</a>
             <a class="btn btn-ghost" href="#features" data-i18n="cta.features">See features</a>
           </div>
           <ul class="hero-points">
             <li data-i18n="hero.p1">Works on low-cost phones</li>
-            <li data-i18n="hero.p2">Installs like an app</li>
+            <li data-i18n="hero.p2">Phone and web, same data</li>
             <li data-i18n="hero.p3">Bangla and English</li>
           </ul>
         </div>
-        <div class="phone" aria-hidden="true">
+        <div class="devices" aria-hidden="true">
+        <div class="laptop">
+          <div class="laptop-screen">
+            <div class="lp-side">
+              <span class="lp-logo"></span>
+              <span class="lp-nav on"></span><span class="lp-nav"></span><span class="lp-nav"></span><span class="lp-nav"></span><span class="lp-nav"></span>
+            </div>
+            <div class="lp-main">
+              <div class="lp-title" data-i18n="lp.title">School dashboard</div>
+              <div class="lp-stats">
+                <div class="lp-stat"><span class="lp-label" data-i18n="lp.students">Students</span><span class="lp-num" data-i18n="lp.studentsnum">1,240</span></div>
+                <div class="lp-stat"><span class="lp-label" data-i18n="lp.present">Present today</span><span class="lp-num" data-i18n="lp.presentnum">96%</span></div>
+                <div class="lp-stat"><span class="lp-label" data-i18n="lp.fees">Fees collected</span><span class="lp-num" data-i18n="lp.feesnum">82%</span></div>
+              </div>
+              <div class="lp-chart">
+                <span class="lp-label" data-i18n="lp.chart">Attendance this week</span>
+                <div class="lp-bars"><i style="height:78%"></i><i style="height:92%"></i><i style="height:85%"></i><i style="height:96%"></i><i style="height:88%"></i><i style="height:94%"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+        <div class="phone">
           <div class="phone-screen">
             <div class="ph-top">
               <span class="ph-title" data-i18n="ph.today">Today</span>
@@ -90,6 +112,7 @@
               <div data-i18n="ph.noticetext">Half-yearly exam starts on 15 December</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -145,8 +168,8 @@
       <div class="container">
         <h2 data-i18n="w.title">Why schools choose EzEdu</h2>
         <div class="why-grid">
-          <div class="why"><h3 data-i18n="w.phone.t">Made for everyday phones</h3><p data-i18n="w.phone.d">Fast on low-cost Android phones and slow connections. No heavy app to download.</p></div>
-          <div class="why"><h3 data-i18n="w.install.t">Installs like an app</h3><p data-i18n="w.install.d">Add EzEdu to the home screen in one tap. Updates arrive on their own.</p></div>
+          <div class="why"><h3 data-i18n="w.both.t">Phone and web together</h3><p data-i18n="w.both.d">Use EzEdu on a phone and on a computer at the same time, with the same account. What you enter on one shows on the other.</p></div>
+          <div class="why"><h3 data-i18n="w.phone.t">Made for everyday phones</h3><p data-i18n="w.phone.d">Fast on low-cost Android phones and slow connections. Add it to the home screen in one tap, with no heavy app to download.</p></div>
           <div class="why"><h3 data-i18n="w.lang.t">Bangla and English</h3><p data-i18n="w.lang.d">Every screen works in both languages, with Bangla digits where you want them.</p></div>
           <div class="why"><h3 data-i18n="w.offline.t">Works offline</h3><p data-i18n="w.offline.d">Teachers can take attendance with no signal. EzEdu saves it and syncs later.</p></div>
           <div class="why"><h3 data-i18n="w.alert.t">Instant alerts</h3><p data-i18n="w.alert.d">Guardians get notifications for absence, notices, and results. SMS and WhatsApp alerts are coming soon.</p></div>
@@ -161,6 +184,7 @@
         <h2 data-i18n="q.title">Questions schools ask</h2>
         <details><summary data-i18n="q.1.q">Do guardians need a smartphone?</summary><p data-i18n="q.1.a">A smartphone gives the full guardian app. SMS alerts for basic phones are coming soon.</p></details>
         <details><summary data-i18n="q.2.q">Do we need to install anything?</summary><p data-i18n="q.2.a">No. EzEdu opens in the browser, and you can add it to the home screen like an app.</p></details>
+        <details><summary data-i18n="q.7.q">Can we use it on a computer and a phone at the same time?</summary><p data-i18n="q.7.a">Yes. Open EzEdu in any browser on a computer, and keep using it on your phone. Both show the same data, so the office can work on a laptop while teachers use their phones.</p></details>
         <details><summary data-i18n="q.3.q">Can we bring our existing student list?</summary><p data-i18n="q.3.a">Yes. Import students from a spreadsheet (CSV), and EzEdu creates their IDs.</p></details>
         <details><summary data-i18n="q.4.q">Does it work without internet?</summary><p data-i18n="q.4.a">Attendance works offline and syncs when the connection returns. Other screens need a connection.</p></details>
         <details><summary data-i18n="q.5.q">Can we run more than one branch?</summary><p data-i18n="q.5.a">Yes. School groups can manage branches together and share staff between them.</p></details>
