@@ -1,4 +1,5 @@
-/* EzEdu website styles. Colors are tokens; dark mode redefines them. */
+/* EzEdu website styles. Colors are tokens; dark mode redefines them.
+   Light is the default. Dark applies only when the visitor picks it (html[data-theme="dark"]). */
 :root {
   --primary: #0e7c86;
   --primary-hover: #0a5560;
@@ -17,23 +18,33 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #5cc4cc;
-    --primary-hover: #86d6dc;
-    --primary-soft: #0f2e31;
-    --on-primary: #04201f;
-    --accent: #fbbf24;
-    --bg: #0b1417;
-    --bg-alt: #101c20;
-    --surface: #13232a;
-    --text: #e6eef1;
-    --muted: #9fb2bb;
-    --border: #23363d;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-    color-scheme: dark;
-  }
+:root[data-theme="dark"] {
+  --primary: #5cc4cc;
+  --primary-hover: #86d6dc;
+  --primary-soft: #0f2e31;
+  --on-primary: #04201f;
+  --accent: #fbbf24;
+  --bg: #0b1417;
+  --bg-alt: #101c20;
+  --surface: #13232a;
+  --text: #e6eef1;
+  --muted: #9fb2bb;
+  --border: #23363d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  color-scheme: dark;
 }
+
+.theme-switch {
+  width: 40px; height: 40px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.theme-switch:hover { border-color: var(--primary); color: var(--primary); }
+.theme-switch svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-switch .moon { display: block; }
+.theme-switch .sun { display: none; }
+:root[data-theme="dark"] .theme-switch .moon { display: none; }
+:root[data-theme="dark"] .theme-switch .sun { display: block; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
